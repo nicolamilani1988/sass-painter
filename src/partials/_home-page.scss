@@ -1,13 +1,12 @@
 #home-page{
 
     .container{
-        width: 60%;
+        max-width: 80%;
         margin: auto;
     }
 
     h1{
-        font-size: 2rem;
-        font-weight: 400;
+        @include bigtext;
     }
 
     h2{
@@ -19,7 +18,7 @@
         display: $flex; 
 
         li{
-            margin-left: $small-margin;
+            margin-left: $space-small;
             font-size: $xsmall-text;
             list-style-type: none;
             a{
@@ -34,7 +33,7 @@
 
         #actions{
             @include flex-horizontal-end;
-            padding: $padding-xsmall 0;
+            padding: $space-xsmall 0;
             ul{
                 i{
                     color: $turquoise-text;
@@ -43,12 +42,12 @@
         }
 
         #navbar{
-            padding: $padding-small 0;
+            padding: $space-small 0;
             ul{
                 align-items: center;
                 li{
                     color: gray;
-                    margin-right: $normal-margin;
+                    margin-right: $space-normal;
                     margin-left: 0;
                     a{
                         color: white;
@@ -71,10 +70,10 @@
             width: 50%;
             img{
                 width: 250px;
-                margin-bottom: $small-margin;
+                margin-bottom: $space-small;
             }
             >div{
-                margin: $normal-margin 0;
+                margin: $space-normal 0;
             }
             .announcement{
                 p{
@@ -85,7 +84,7 @@
             }
             button{
                 @include button;
-                margin-right: $normal-margin;
+                margin-right: $space-normal;
                 border: 2px solid black;
             }
             button.black{
@@ -99,11 +98,11 @@
     }
 
     main{
-        padding-top: $padding-large;
+        padding-top: $space-large;
         background-color: #E8E8E8;
         h1{
             text-align: center;
-            margin-bottom: $normal-margin;
+            margin-bottom: $space-normal;
         }
         .img-container{
             width: 100%;
@@ -115,15 +114,15 @@
         #possibilities{
             .container{
                 @include flex-horizontal-space-between;
-                margin-bottom: $large-margin;
+                margin-bottom: $space-xlarge;
                 .card{
                     width: calc((100% - 60px) / 3);
                     background-color: white;
                     
                     .description{
-                        padding: $padding-small;
+                        padding: $space-small;
                         p{
-                            margin: $small-margin 0;
+                            margin: $space-small 0;
                         }
                         span i{
                             color: $turquoise-text;
@@ -139,7 +138,7 @@
             }
         }
         #points{
-            margin-top: $xlarge-margin;
+            margin-top: $space-xxlarge;
             .row{
                 display: flex;
                 color: white;
@@ -151,10 +150,10 @@
                     text-align: left;
                 }
                 .description{
-                    padding:$padding-xlarge $padding-large;
+                    padding:$space-xlarge $space-large;
                     p{
                         font-size: 1.1rem;
-                        margin: $small-margin 0;
+                        margin: $space-small 0;
                         line-height: $thin-text-space;
                     }
                     button{
@@ -190,10 +189,10 @@
 
     footer{
         >.container{
-            padding: 0 $padding-small;
+            padding: 0 $space-small;
             #about{
                 display: flex;
-                margin-top: $large-margin;
+                margin-top: $space-xlarge;
                 div{
                     width: 25%;
                 }
@@ -201,14 +200,14 @@
                     @include flex-vertical;
                     li{
                         margin-left: 0;
-                        margin-top: $xsmall-margin;
+                        margin-top: $space-xsmall;
                     }
                 }
             }
         }
         .social{
             display: flex;
-            padding: $padding-large 0;
+            padding: $space-large 0;
             
             img{
             width: 40px;
@@ -226,11 +225,11 @@
             }
             img{
                 height: 50px;
-                margin-right: $small-margin;
+                margin-right: $space-small;
                 cursor: pointer;
             }
             .container{
-                padding: $padding-small;
+                padding: $space-small;
                 @include flex-horizontal-space-between;
             }
             #copyright{

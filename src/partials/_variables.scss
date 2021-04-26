@@ -5,16 +5,13 @@ $turquoise-text: #009CFF;
 $shock-text: #C70EB8;
 
 // spazi
-$xsmall-margin: 10px;
-$small-margin : 20px;
-$normal-margin: 30px;
-$large-margin: 50px;
-$xlarge-margin: 80px;
+$space-xsmall: 10px;
+$space-small : 20px;
+$space-normal: 30px;
+$space-large: 40px;
+$space-xlarge: 50px;
+$space-xxlarge: 80px;
 
-$padding-xsmall: 10px;
-$padding-small: 20px;
-$padding-large: 40px;
-$padding-xlarge: 50px;
 //spazi testo
 $thin-text-space: 30px;
 $large-text-space: 60px;
@@ -45,4 +42,10 @@ $flex: flex;
     padding: 10px 30px;
     border: none;
     cursor: pointer;
+}
+
+//testo
+@mixin bigtext{
+    font-size: 2rem;
+    font-weight: 400;
 }

@@ -1,5 +1,5 @@
 #home-page .container {
-  width: 60%;
+  max-width: 80%;
   margin: auto;
 }
 #home-page h1 {
