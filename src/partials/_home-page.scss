@@ -188,5 +188,56 @@
         }
     }
 
+    footer{
+        >.container{
+            padding: 0 $padding-small;
+            #about{
+                display: flex;
+                margin-top: $large-margin;
+                div{
+                    width: 25%;
+                }
+                ul{
+                    @include flex-vertical;
+                    li{
+                        margin-left: 0;
+                        margin-top: $xsmall-margin;
+                    }
+                }
+            }
+        }
+        .social{
+            display: flex;
+            padding: $padding-large 0;
+            
+            img{
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            cursor: pointer;
+            }
+        }
+
+        #credits{
+            background-color: $bg-header-footer;
+            #partners{
+                display: flex;
+                align-items: center;
+            }
+            img{
+                height: 50px;
+                margin-right: $small-margin;
+                cursor: pointer;
+            }
+            .container{
+                padding: $padding-small;
+                @include flex-horizontal-space-between;
+            }
+            #copyright{
+                color: white;
+            }
+        }
+    }
+
 
 }

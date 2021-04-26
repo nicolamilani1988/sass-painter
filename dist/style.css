@@ -167,6 +167,54 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+#home-page footer > .container {
+  padding: 0 20px;
+}
+#home-page footer > .container #about {
+  display: flex;
+  margin-top: 50px;
+}
+#home-page footer > .container #about div {
+  width: 25%;
+}
+#home-page footer > .container #about ul {
+  display: flex;
+  flex-direction: column;
+}
+#home-page footer > .container #about ul li {
+  margin-left: 0;
+  margin-top: 10px;
+}
+#home-page footer .social {
+  display: flex;
+  padding: 40px 0;
+}
+#home-page footer .social img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+#home-page footer #credits {
+  background-color: black;
+}
+#home-page footer #credits #partners {
+  display: flex;
+  align-items: center;
+}
+#home-page footer #credits img {
+  height: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#home-page footer #credits .container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#home-page footer #credits #copyright {
+  color: white;
+}
 
 * {
   padding: 0;
