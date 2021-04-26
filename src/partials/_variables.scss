@@ -1,0 +1,31 @@
+// colori
+$bg-header-footer: black;
+$text-on-blackbg: white;
+$icons-on-blackbg: #009CFF;
+
+// spazi
+$large-margin: 50px;
+$normal-margin: 30px;
+$small-margin : 20px;
+$padding-xsmall: 10px;
+$padding-small: 20px;
+$padding-large: 40px;
+//spazi testo
+$thin-text-space: 40px;
+$large-text-space: 80px;
+
+//testo
+$xsmall-text: 0.8rem;
+
+//flex
+$flex: flex;
+
+@mixin flex-horizontal-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin flex-vertical{
+    display: flex;
+    flex-direction: column;
+}

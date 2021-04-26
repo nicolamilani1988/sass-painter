@@ -1,0 +1,55 @@
+#home-page{
+
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+
+    ul{
+        display: $flex; 
+
+        li{
+            margin-left: $small-margin;
+            font-size: $xsmall-text;
+            list-style-type: none;
+            a{
+                color: gray;                
+            } 
+        
+        }
+    }    
+
+    header{
+        background-color: $bg-header-footer;
+
+        #actions{
+            @include flex-horizontal-end;
+            padding: $padding-xsmall 0;
+            ul{
+                i{
+                    color: $icons-on-blackbg;
+                }
+            }
+        }
+
+        #navbar{
+            padding: $padding-small 0;
+            ul{
+                align-items: center;
+                li{
+                    color: gray;
+                    margin-right: $normal-margin;
+                    a{
+                        color: white;
+                        font-size: 0.9rem;
+                    }
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
