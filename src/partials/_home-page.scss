@@ -15,8 +15,7 @@
     }
 
     ul{
-        display: $flex; 
-
+        display: flex; 
         li{
             margin-left: $space-small;
             font-size: $xsmall-text;
@@ -24,13 +23,11 @@
             a{
                 color: gray;                
             } 
-        
         }
     }    
 
     header{
         background-color: $bg-header-footer;
-
         #actions{
             @include flex-horizontal-end;
             padding: $space-xsmall 0;
@@ -40,7 +37,6 @@
                 }
             }
         }
-
         #navbar{
             padding: $space-small 0;
             ul{
@@ -64,8 +60,7 @@
     #jumbotron{
         background-image: url('../img/bg-painter-home.jpg');
         background-size: cover;
-        padding: 80px 0;
-
+        padding: $space-xxlarge 0;
         .title{
             width: 50%;
             img{
@@ -104,13 +99,6 @@
             text-align: center;
             margin-bottom: $space-normal;
         }
-        .img-container{
-            width: 100%;
-            >img{
-                width: 100%;
-            }
-        }
-
         #possibilities{
             .container{
                 @include flex-horizontal-space-between;
@@ -118,7 +106,6 @@
                 .card{
                     width: calc((100% - 60px) / 3);
                     background-color: white;
-                    
                     .description{
                         padding: $space-small;
                         p{
@@ -132,8 +119,12 @@
                             color: $turquoise-text;
                         }
                     }
-                    
-                    
+                    .img-container{
+                        width: 100%;
+                        >img{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -142,7 +133,7 @@
             .row{
                 display: flex;
                 color: white;
-                height: 280px;
+                height: 330px;
                 >div{
                     width:50%;
                 }
@@ -175,15 +166,14 @@
                         width: 80%;
                     }
                 }
-                .img-container.last{
-                    img{
-                        height: 280px;
-                        object-fit: cover;
+                .img-container{
+                    width: 50%;
+                    >img{
+                        width: 100%;
+                        height: 100%;
                     }
                 }
-                
             }
-
         }
     }
 
@@ -208,7 +198,6 @@
         .social{
             display: flex;
             padding: $space-large 0;
-            
             img{
             width: 40px;
             height: 40px;
@@ -216,7 +205,6 @@
             cursor: pointer;
             }
         }
-
         #credits{
             background-color: $bg-header-footer;
             #partners{
@@ -237,6 +225,4 @@
             }
         }
     }
-
-
 }

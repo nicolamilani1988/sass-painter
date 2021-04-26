@@ -20,8 +20,6 @@ $large-text-space: 60px;
 $xsmall-text: 0.8rem;
 
 //flex
-$flex: flex;
-
 @mixin flex-horizontal-end{
     display: flex;
     justify-content: flex-end;
