@@ -6,7 +6,6 @@
     }
 
     h1{
-        margin-bottom: $normal-margin;
         font-size: 2rem;
         font-weight: 400;
     }
@@ -104,11 +103,15 @@
         background-color: #E8E8E8;
         h1{
             text-align: center;
+            margin-bottom: $normal-margin;
         }
-        
-        section{
-            margin: $normal-margin 0;
+        .img-container{
+            width: 100%;
+            >img{
+                width: 100%;
+            }
         }
+
         #possibilities{
             .container{
                 @include flex-horizontal-space-between;
@@ -116,14 +119,7 @@
                 .card{
                     width: calc((100% - 60px) / 3);
                     background-color: white;
-                    //debug
-                    border: 1px solid red;
-                    >div{
-                        width: 100%;
-                        >img{
-                            width: 100%;
-                        }
-                    }
+                    
                     .description{
                         padding: $padding-small;
                         p{
@@ -143,6 +139,51 @@
             }
         }
         #points{
+            margin-top: $xlarge-margin;
+            .row{
+                display: flex;
+                color: white;
+                height: 280px;
+                >div{
+                    width:50%;
+                }
+                h1{
+                    text-align: left;
+                }
+                .description{
+                    padding:$padding-xlarge $padding-large;
+                    p{
+                        font-size: 1.1rem;
+                        margin: $small-margin 0;
+                        line-height: $thin-text-space;
+                    }
+                    button{
+                        @include button;
+                    }
+                }
+                .description.purple{
+                    background-color: #3C1567;
+                }
+                .description.gray{
+                    background-color: #3C3C3C;
+                }
+                .description.blue{
+                    background-color: #0072BC;
+                }
+                .first.img-container{
+                    background-image: url('../img/wacom-painter.jpg');
+                    img{
+                        width: 80%;
+                    }
+                }
+                .img-container.last{
+                    img{
+                        height: 280px;
+                        object-fit: cover;
+                    }
+                }
+                
+            }
 
         }
     }

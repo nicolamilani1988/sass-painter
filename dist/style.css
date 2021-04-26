@@ -3,7 +3,6 @@
   margin: auto;
 }
 #home-page h1 {
-  margin-bottom: 30px;
   font-size: 2rem;
   font-weight: 400;
 }
@@ -91,9 +90,13 @@
 }
 #home-page main h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
-#home-page main section {
-  margin: 30px 0;
+#home-page main .img-container {
+  width: 100%;
+}
+#home-page main .img-container > img {
+  width: 100%;
 }
 #home-page main #possibilities .container {
   display: flex;
@@ -103,13 +106,6 @@
 #home-page main #possibilities .container .card {
   width: calc((100% - 60px) / 3);
   background-color: white;
-  border: 1px solid red;
-}
-#home-page main #possibilities .container .card > div {
-  width: 100%;
-}
-#home-page main #possibilities .container .card > div > img {
-  width: 100%;
 }
 #home-page main #possibilities .container .card .description {
   padding: 20px;
@@ -124,6 +120,54 @@
 #home-page main #possibilities .container .card .description a {
   color: #009CFF;
 }
+#home-page main #points {
+  margin-top: 80px;
+}
+#home-page main #points .row {
+  display: flex;
+  color: white;
+  height: 280px;
+}
+#home-page main #points .row > div {
+  width: 50%;
+}
+#home-page main #points .row h1 {
+  text-align: left;
+}
+#home-page main #points .row .description {
+  padding: 50px 40px;
+}
+#home-page main #points .row .description p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  line-height: 30px;
+}
+#home-page main #points .row .description button {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+#home-page main #points .row .description.purple {
+  background-color: #3C1567;
+}
+#home-page main #points .row .description.gray {
+  background-color: #3C3C3C;
+}
+#home-page main #points .row .description.blue {
+  background-color: #0072BC;
+}
+#home-page main #points .row .first.img-container {
+  background-image: url("../img/wacom-painter.jpg");
+}
+#home-page main #points .row .first.img-container img {
+  width: 80%;
+}
+#home-page main #points .row .img-container.last img {
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   padding: 0;
   margin: 0;
