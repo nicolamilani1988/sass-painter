@@ -1,7 +1,7 @@
 // colori
 $bg-header-footer: black;
 $text-on-blackbg: white;
-$icons-on-blackbg: #009CFF;
+$turquoise-text: #009CFF;
 $shock-text: #C70EB8;
 
 // spazi
@@ -24,6 +24,11 @@ $flex: flex;
 @mixin flex-horizontal-end{
     display: flex;
     justify-content: flex-end;
+}
+
+@mixin flex-horizontal-space-between{
+    display: flex;
+    justify-content: space-between;
 }
 
 @mixin flex-vertical{

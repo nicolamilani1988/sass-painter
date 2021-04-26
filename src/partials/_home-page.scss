@@ -5,6 +5,12 @@
         margin: auto;
     }
 
+    h1{
+        margin-bottom: $normal-margin;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
     h2{
         font-weight: 400;
         line-height: $thin-text-space;
@@ -32,7 +38,7 @@
             padding: $padding-xsmall 0;
             ul{
                 i{
-                    color: $icons-on-blackbg;
+                    color: $turquoise-text;
                 }
             }
         }
@@ -90,6 +96,54 @@
             button.transparent{
                 background-color: transparent;
             }
+        }
+    }
+
+    main{
+        padding-top: $padding-large;
+        background-color: #E8E8E8;
+        h1{
+            text-align: center;
+        }
+        
+        section{
+            margin: $normal-margin 0;
+        }
+        #possibilities{
+            .container{
+                @include flex-horizontal-space-between;
+                margin-bottom: $large-margin;
+                .card{
+                    width: calc((100% - 60px) / 3);
+                    background-color: white;
+                    //debug
+                    border: 1px solid red;
+                    >div{
+                        width: 100%;
+                        >img{
+                            width: 100%;
+                        }
+                    }
+                    .description{
+                        padding: $padding-small;
+                        p{
+                            margin: $small-margin 0;
+                        }
+                        span i{
+                            color: $turquoise-text;
+                            margin-right: 5px;
+                        }
+                        a{
+                            color: $turquoise-text;
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+        #points{
+
         }
     }
 

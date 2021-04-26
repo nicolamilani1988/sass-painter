@@ -2,6 +2,11 @@
   width: 60%;
   margin: auto;
 }
+#home-page h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 400;
+}
 #home-page h2 {
   font-weight: 400;
   line-height: 30px;
@@ -80,7 +85,45 @@
 #home-page #jumbotron .title button.transparent {
   background-color: transparent;
 }
-
+#home-page main {
+  padding-top: 40px;
+  background-color: #E8E8E8;
+}
+#home-page main h1 {
+  text-align: center;
+}
+#home-page main section {
+  margin: 30px 0;
+}
+#home-page main #possibilities .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#home-page main #possibilities .container .card {
+  width: calc((100% - 60px) / 3);
+  background-color: white;
+  border: 1px solid red;
+}
+#home-page main #possibilities .container .card > div {
+  width: 100%;
+}
+#home-page main #possibilities .container .card > div > img {
+  width: 100%;
+}
+#home-page main #possibilities .container .card .description {
+  padding: 20px;
+}
+#home-page main #possibilities .container .card .description p {
+  margin: 20px 0;
+}
+#home-page main #possibilities .container .card .description span i {
+  color: #009CFF;
+  margin-right: 5px;
+}
+#home-page main #possibilities .container .card .description a {
+  color: #009CFF;
+}
 * {
   padding: 0;
   margin: 0;
