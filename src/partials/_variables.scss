@@ -2,6 +2,7 @@
 $bg-header-footer: black;
 $text-on-blackbg: white;
 $icons-on-blackbg: #009CFF;
+$shock-text: #C70EB8;
 
 // spazi
 $large-margin: 50px;
@@ -11,8 +12,8 @@ $padding-xsmall: 10px;
 $padding-small: 20px;
 $padding-large: 40px;
 //spazi testo
-$thin-text-space: 40px;
-$large-text-space: 80px;
+$thin-text-space: 30px;
+$large-text-space: 60px;
 
 //testo
 $xsmall-text: 0.8rem;
@@ -28,4 +29,11 @@ $flex: flex;
 @mixin flex-vertical{
     display: flex;
     flex-direction: column;
+}
+ 
+//buttons
+@mixin button{
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
 }

@@ -1,6 +1,10 @@
 #home-page .container {
-  width: 70%;
+  width: 60%;
   margin: auto;
+}
+#home-page h2 {
+  font-weight: 400;
+  line-height: 30px;
 }
 #home-page ul {
   display: flex;
@@ -33,6 +37,7 @@
 #home-page header #navbar ul li {
   color: gray;
   margin-right: 30px;
+  margin-left: 0;
 }
 #home-page header #navbar ul li a {
   color: white;
@@ -40,6 +45,40 @@
 }
 #home-page header #navbar ul li img {
   width: 100px;
+}
+#home-page #jumbotron {
+  background-image: url("../img/bg-painter-home.jpg");
+  background-size: cover;
+  padding: 80px 0;
+}
+#home-page #jumbotron .title {
+  width: 50%;
+}
+#home-page #jumbotron .title img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+#home-page #jumbotron .title > div {
+  margin: 30px 0;
+}
+#home-page #jumbotron .title .announcement p {
+  color: #C70EB8;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+#home-page #jumbotron .title button {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+  border: 2px solid black;
+}
+#home-page #jumbotron .title button.black {
+  background-color: black;
+  color: white;
+}
+#home-page #jumbotron .title button.transparent {
+  background-color: transparent;
 }
 
 * {
